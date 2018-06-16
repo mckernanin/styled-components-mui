@@ -4,6 +4,7 @@
   "description": "Make writing styled components with material-ui not suck!",
   "main": "dist/index.js",
   "repository": "git@github.com:mckernanin/styled-components-mui.git",
+  "homepage": "https://github.com/mckernanin/styled-components-mui",
   "author": "Kevin McKernan <kevin@mckernan.in>",
   "license": "MIT",
   "devDependencies": {
