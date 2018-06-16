@@ -23,7 +23,7 @@
     "rollup-plugin-node-resolve": "^3.3.0"
   },
   "peerDependencies": {
-    "styled-components": "3.x"
+    "styled-components": "^3.0.0"
   },
   "scripts": {
     "lint": "eslint src/**/*.{js,jsx}",
