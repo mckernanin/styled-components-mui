@@ -29,6 +29,7 @@
     "lint": "eslint src/**/*.{js,jsx}",
     "lint:fix": "yarn lint --fix",
     "lint:report": "yarn lint -f node_modules/eslint-detailed-reporter/lib/detailed.js -o coverage/eslint.html",
-    "format": "prettier --write 'src/**/*.{js,jsx}'"
+    "format": "prettier --write 'src/**/*.{js,jsx}'",
+    "test": "echo 'Need to write some tests...'"
   }
 }
