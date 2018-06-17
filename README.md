@@ -1,4 +1,5 @@
 # Styled Components MUI
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 Make writing styled-components with material-ui not suck!
@@ -10,10 +11,10 @@ For custom components, I always turn to [Styled Components](https://material-ui.
 
 ```
 import styled from 'styled-components';
-import {Dialog } from '@material-ui/core';
+import { Dialog } from '@material-ui/core';
 
 const DialogStyless = styled(Dialog).attrs({
-  classes: {paper: "Dialog Styles"}
+  classes: { paper: 'DialogStyles' }
 })`
   .DialogStyles {
     width: 50vw;
@@ -29,9 +30,9 @@ Using styled-components-mui, you can do the following instead:
 
 ```
 import styled from 'styled-components-mui';
-import {Dialog } from '@material-ui/core';
+import { Dialog } from '@material-ui/core';
 
-const DialogStyless = styled(Dialog, {paper: "DialogStyles"})`
+const DialogStyless = styled(Dialog, { paper: 'DialogStyles' })`
   .DialogStyles {
     width: 50vw;
     max-width: 100%;
@@ -42,6 +43,8 @@ const DialogStyless = styled(Dialog, {paper: "DialogStyles"})`
 `;
 ```
 
+`styled-components-mui` is a wrapper around the `styled` function from styled components. You can pass an object of classes as the second parameter. We also wrap the styles in `&& {}` as recommended by the material-ui "working with styled components" as an easy way to make sure your styles are applied without having to fight with insertion points.
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
@@ -50,6 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- prettier-ignore -->
 | [<img src="https://avatars1.githubusercontent.com/u/4673651?v=4" width="100px;"/><br /><sub><b>Henry Kaufman</b></sub>](http://kaufman.io)<br />[💻](https://github.com/mckernanin/styled-components-mui/commits?author=hcjk "Code") [🤔](#ideas-hcjk "Ideas, Planning, & Feedback") | [<img src="https://avatars1.githubusercontent.com/u/6300047?v=4" width="100px;"/><br /><sub><b>Kevin McKernan</b></sub>](https://mckernan.in)<br />[💻](https://github.com/mckernanin/styled-components-mui/commits?author=mckernanin "Code") [📖](https://github.com/mckernanin/styled-components-mui/commits?author=mckernanin "Documentation") [🤔](#ideas-mckernanin "Ideas, Planning, & Feedback") [🚇](#infra-mckernanin "Infrastructure (Hosting, Build-Tools, etc)") |
 | :---: | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
