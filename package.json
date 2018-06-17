@@ -21,6 +21,7 @@
     "prettier": "^1.13.5",
     "prettier-eslint": "^8.8.1",
     "rollup": "^0.60.7",
+    "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-node-resolve": "^3.3.0"
   },
   "peerDependencies": {
@@ -32,5 +33,6 @@
     "lint:report": "yarn lint -f node_modules/eslint-detailed-reporter/lib/detailed.js -o coverage/eslint.html",
     "format": "prettier --write 'src/**/*.{js,jsx}'",
     "test": "echo 'Need to write some tests...'"
-  }
+  },
+  "dependencies": {}
 }
