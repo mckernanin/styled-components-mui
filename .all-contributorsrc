@@ -1,0 +1,23 @@
+{
+  "projectName": "styled-components-mui",
+  "projectOwner": "mckernanin",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "hcjk",
+      "name": "Henry Kaufman",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/4673651?v=4",
+      "profile": "http://kaufman.io",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    }
+  ]
+}
