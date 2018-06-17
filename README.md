@@ -43,7 +43,31 @@ const DialogStyless = styled(Dialog, { paper: 'DialogStyles' })`
 `;
 ```
 
-`styled-components-mui` is a wrapper around the `styled` function from styled components. You can pass an object of classes as the second parameter. We also wrap the styles in `&& {}` as recommended by the material-ui "working with styled components" as an easy way to make sure your styles are applied without having to fight with insertion points.
+Here's another example, where we aren't passing custom classes. The difference from regular `styled` is that all of your styles get wrapped in `&& { }`, which makes them more specific than MUI's styles.
+
+```
+import styled from 'styled-components-mui';
+import { Button } from '@material-ui/core';
+
+const StyledButton = styled(Dialog)`
+  background-color: palevioletred;
+`;
+```
+
+And one more, where we're passing a root class as a string.
+
+```
+import styled from 'styled-components-mui';
+import { Table } from '@material-ui/core';
+
+const StyledTable = styled(Table, 'MyTableClass')`
+  .MyTableClass {
+    background-color: palevioletred;
+  }
+`;
+```
+
+`styled-components-mui` is a wrapper around the `styled` function from styled components. You can pass an object of classes as the second parameter. We also wrap the styles in `&& { }` as recommended by the material-ui "working with styled components" as an easy way to make sure your styles are applied without having to fight with insertion points.
 
 ## Contributors
 
