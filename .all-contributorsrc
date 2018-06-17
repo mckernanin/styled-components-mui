@@ -18,6 +18,18 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "mckernanin",
+      "name": "Kevin McKernan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6300047?v=4",
+      "profile": "https://mckernan.in",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "infra"
+      ]
     }
   ]
 }
