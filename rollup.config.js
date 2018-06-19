@@ -1,24 +1,28 @@
-import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 
-export default {
+module.exports = {
   input: 'src/index.js',
   output: {
     file: 'dist/index.js',
     format: 'es',
+    exports: 'named',
   },
-  exports: 'named',
+  external: ['styled-components'],
   plugins: [
-    resolve({
-      customResolveOptions: {
-        moduleDirectory: 'node_modules',
-      },
-    }),
     babel({
       babelrc: false,
-      presets: ['env', 'flow'],
+      presets: [
+        [
+          'env',
+          {
+            targets: {
+              browsers: ['ie 10', 'ios 7'],
+            },
+            modules: false,
+          },
+        ],
+      ],
       plugins: ['transform-class-properties'],
     }),
   ],
-  external: ['styled-components'],
 };
