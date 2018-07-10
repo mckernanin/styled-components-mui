@@ -9,7 +9,7 @@ Make writing styled-components with material-ui not suck!
 [Material UI](https://material-ui.com/) is an awesome library, and it's theme abilities are awesome.
 For custom components, I always turn to [Styled Components](https://material-ui.com/). Making these work together is a little tedious, having to do something like this:
 
-```
+```js
 import styled from 'styled-components';
 import { Dialog } from '@material-ui/core';
 
@@ -28,7 +28,7 @@ const DialogStyless = styled(Dialog).attrs({
 
 Using styled-components-mui, you can do the following instead:
 
-```
+```js
 import styled from 'styled-components-mui';
 import { Dialog } from '@material-ui/core';
 
@@ -45,7 +45,7 @@ const DialogStyless = styled(Dialog, { paper: 'DialogStyles' })`
 
 Here's another example, where we aren't passing custom classes. The difference from regular `styled` is that all of your styles get wrapped in `&& { }`, which makes them more specific than MUI's styles.
 
-```
+```js
 import styled from 'styled-components-mui';
 import { Button } from '@material-ui/core';
 
@@ -56,7 +56,7 @@ const StyledButton = styled(Dialog)`
 
 And one more, where we're passing a root class as a string.
 
-```
+```js
 import styled from 'styled-components-mui';
 import { Table } from '@material-ui/core';
 
